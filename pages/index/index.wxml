@@ -1,5 +1,80 @@
 <!--index.wxml-->
-<view class="container">
+<view class="top-info container">
+  <view class="location">
+    <image src="../../image/icon_location.png"></image>
+    <text>上海人民广场</text>
+    <image src="../../image/icon_down.png"></image>
+  </view>
+  <view class="search-box" bindtap="handleFocus">
+    <input id="search" bindblur="handleBlur" />
+    <label for="search" hidden="{{searchLabelShow}}">
+      <image src="../../image/icon_search.png"></image>
+      <text>请输入搜索内容</text>
+    </label>
+  </view>
+</view>
+<view class="take-group">
+  <image src="../../image/demo/demo-img1.png" mode="widthFix"></image>
+  <scroll-view class="goods-list-box" scroll-x="true" style="width: 100%">
+    <view class="goods-item">
+      <image src="../../image/demo/demo-goods1.png"></image>
+      <text class="group-icon">拼团</text>
+      <view class="name-price">
+        <text class="goods-name">奶油草莓 约500g</text>
+        <text class="goods-nowPrice">￥26.8<text class="goods-oldPrice">￥36.8</text></text>
+      </view>
+    </view>
+    <view class="goods-item">
+      <image src="../../image/demo/demo-goods2.png"></image>
+      <text class="group-icon">拼团</text>
+      <view class="name-price">
+        <text class="goods-name">砀山黄桃 约500g</text>
+        <text class="goods-nowPrice">￥22.8<text class="goods-oldPrice">￥36.8</text></text>
+      </view>
+    </view>
+    <view class="goods-item">
+      <image src="../../image/demo/demo-goods3.png"></image>
+      <text class="group-icon">拼团</text>
+      <view class="name-price">
+        <text class="goods-name">海南贵妃芒果 约500g</text>
+        <text class="goods-nowPrice">￥36.8<text class="goods-oldPrice">￥59.8</text></text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view class="seckill">
+  <image src="../../image/demo/demo-img2.png" mode="widthFix"></image>
+  <scroll-view class="goods-list-box" scroll-x="true" style="width: 100%">
+    <view class="goods-item">
+      <image src="../../image/demo/demo-goods4.png"></image>
+      <text class="kill-icon">秒杀</text>
+      <view class="name-price">
+        <text class="goods-name">眉县猕猴桃 约500g</text>
+        <text class="goods-nowPrice">￥16.8<text class="goods-oldPrice">￥20</text></text>
+      </view>
+    </view>
+    <view class="goods-item">
+      <image src="../../image/demo/demo-goods5.png"></image>
+      <text class="kill-icon">秒杀</text>
+      <view class="name-price">
+        <text class="goods-name">黄柠檬 约200g</text>
+        <text class="goods-nowPrice">￥12.8<text class="goods-oldPrice">￥16.8</text></text>
+      </view>
+    </view>
+    <view class="goods-item">
+      <image src="../../image/demo/demo-goods6.png"></image>
+      <text class="kill-icon">秒杀</text>
+      <view class="name-price">
+        <text class="goods-name">海南红心柚子 约1kg</text>
+        <text class="goods-nowPrice">￥24.6<text class="goods-oldPrice">￥31.5</text></text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view class="shopcart-box">
+  <image src="../../image/icon-shopcart.png"></image>
+</view>
+<!-- <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -8,6 +83,6 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <text class="user-motto"></text>
   </view>
-</view>
+</view> -->

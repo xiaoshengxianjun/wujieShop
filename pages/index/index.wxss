@@ -1,4 +1,168 @@
 /**index.wxss**/
+
+page {
+  background-color: #f4f4f4;
+}
+
+.top-info {
+  width: 100%;
+  height: 88rpx;
+  background-color: #37db84;
+  overflow: hidden;
+  color: #fff;
+}
+
+.location {
+  height: 44rpx;
+  margin-top: 22rpx;
+  float: left;
+  font-size: 28rpx;
+}
+
+.location text {
+  display: inline-block;
+  width: 165rpx;
+  line-height: 44rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.location image {
+  width: 40rpx;
+  height: 40rpx;
+  overflow: hidden;
+}
+
+.search-box {
+  width: 424rpx;
+  height: 56rpx;
+  float: right;
+  margin-top: 16rpx;
+  border-radius: 28rpx;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.search-box input {
+  font-size: 24rpx;
+  height: 100%;
+  padding: 0rpx 30rpx;
+}
+
+.search-box label {
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 100%;
+  font-size: 26rpx;
+  line-height: 56rpx;
+  text-align: center;
+}
+
+.search-box label image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-top: -4rpx;
+}
+
+.take-group, .seckill {
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.take-group image, .seckill image {
+  width: 100%;
+}
+
+.goods-list-box {
+  white-space: nowrap;
+  display: flex;
+}
+
+.goods-item {
+  width: 250rpx;
+  font-size: 24rpx;
+  display: inline-block;
+  margin: 0rpx 20rpx;
+  text-align: center;
+  position: relative;
+}
+
+.goods-item image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.group-icon, .kill-icon {
+  position: absolute;
+  top: 0rpx;
+  left: 25rpx;
+  width: 50rpx;
+  height: 26rpx;
+  border-radius: 4px;
+  font-size: 20rpx;
+}
+
+.group-icon {
+  color: #ffa200;
+  border: solid 1px #ffa200;
+}
+
+.kill-icon {
+  color: #ff002e;
+  border: solid 1px #ff002e;
+}
+
+.name-price {
+  width: 100%;
+  height: 56rpx;
+  line-height: 28rpx;
+  overflow: hidden;
+}
+
+.goods-name, .goods-nowPrice {
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goods-nowPrice {
+  color: #f33;
+}
+
+.goods-oldPrice {
+  color: #666;
+  font-size: 20rpx;
+  text-decoration: line-through;
+  margin-left: 6rpx;
+}
+
+.shopcart-box{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.4;
+  position: fixed;
+  right: 30rpx;
+  bottom: 160rpx;
+}
+.shopcart-box image{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
 .userinfo {
   display: flex;
   flex-direction: column;

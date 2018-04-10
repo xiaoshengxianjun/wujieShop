@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    searchLabelShow: false,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -49,6 +49,18 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  // 搜索框点击事件,输入框聚焦
+  handleFocus: function(e) {
+    this.setData({
+      searchLabelShow: true
+    })
+  },
+  // 搜索框失去焦点处理
+  handleBlur: function(e) {
+    this.setData({
+      searchLabelShow: false
     })
   }
 })

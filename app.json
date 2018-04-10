@@ -5,8 +5,27 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#37db84",
+    "navigationBarTitleText": "鲜丰水果",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#37db84",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/tabbar_home.png",
+        "selectedIconPath": "image/tabbar_home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/tabbar_order.png",
+        "selectedIconPath": "image/tabbar_order_active.png",
+        "text": "我的订单"
+      }
+    ]
   }
 }
