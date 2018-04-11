@@ -1,0 +1,95 @@
+.order-item {
+  background-color: #fff;
+  font-size: 24rpx;
+  height: 344rpx;
+  margin-bottom: 10rpx;
+}
+
+/*头部订单状态  */
+
+.item-top {
+  padding: 0px 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+
+.group-icon {
+  width: 50rpx;
+  height: 26rpx;
+  border-radius: 4px;
+  font-size: 20rpx;
+  color: #ffa200;
+  border: solid 2rpx #ffa200;
+  margin-right: 10rpx;
+}
+
+.order-status {
+  float: right;
+}
+
+/*商品图片展示区  */
+
+.item-middle {
+  height: 122rpx;
+  padding: 9rpx 20rpx;
+  overflow: scroll;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+
+.goods-item-img {
+  height: 118rpx;
+  width: 118rpx;
+  border: 2rpx solid #f2f2f2;
+  display: inline-block;
+  margin-right: 8rpx;
+}
+
+.goods-item-img image {
+  width: 100%;
+  height: 100%;
+}
+
+/*商品总数量总价  */
+
+.item-total {
+  padding: 0rpx 30rpx;
+  text-align: right;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+
+.item-total text:first-of-type {
+  margin-right: 10rpx;
+}
+
+.item-total .freight {
+  font-size: 20rpx;
+}
+
+.item-total .total-price {
+  color: #f33;
+  margin-right: 10rpx;
+}
+
+/*按钮操作  */
+
+.btn-box {
+  height: 80rpx;
+  text-align: right;
+}
+
+.btn-box button {
+  height: 46rpx;
+  font-size: 24rpx;
+  padding: 0px 20rpx;
+  line-height: 45rpx;
+  margin-top: 17rpx;
+  margin-right: 20rpx;
+  border-radius: 8rpx;
+}
+
+.btn-box button:last-of-type {
+  margin-right: 30rpx;
+}

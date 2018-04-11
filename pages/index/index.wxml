@@ -16,28 +16,12 @@
 <view class="take-group">
   <image src="../../image/demo/demo-img1.png" mode="widthFix"></image>
   <scroll-view class="goods-list-box" scroll-x="true" style="width: 100%">
-    <view class="goods-item">
-      <image src="../../image/demo/demo-goods1.png"></image>
+    <view class="goods-item" wx:for="{{takeGroupGoods}}" wx:key="id">
+      <image src="{{item.img}}"></image>
       <text class="group-icon">拼团</text>
       <view class="name-price">
-        <text class="goods-name">奶油草莓 约500g</text>
-        <text class="goods-nowPrice">￥26.8<text class="goods-oldPrice">￥36.8</text></text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <image src="../../image/demo/demo-goods2.png"></image>
-      <text class="group-icon">拼团</text>
-      <view class="name-price">
-        <text class="goods-name">砀山黄桃 约500g</text>
-        <text class="goods-nowPrice">￥22.8<text class="goods-oldPrice">￥36.8</text></text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <image src="../../image/demo/demo-goods3.png"></image>
-      <text class="group-icon">拼团</text>
-      <view class="name-price">
-        <text class="goods-name">海南贵妃芒果 约500g</text>
-        <text class="goods-nowPrice">￥36.8<text class="goods-oldPrice">￥59.8</text></text>
+        <text class="goods-name">{{item.name}}</text>
+        <text class="goods-nowPrice">￥{{item.nowPrice}}<text class="goods-oldPrice">￥{{item.oldPrice}}</text></text>
       </view>
     </view>
   </scroll-view>
@@ -45,28 +29,12 @@
 <view class="seckill">
   <image src="../../image/demo/demo-img2.png" mode="widthFix"></image>
   <scroll-view class="goods-list-box" scroll-x="true" style="width: 100%">
-    <view class="goods-item">
-      <image src="../../image/demo/demo-goods4.png"></image>
+    <view class="goods-item" wx:for="{{seckillGoods}}" wx:key="id">
+      <image src="{{item.img}}"></image>
       <text class="kill-icon">秒杀</text>
       <view class="name-price">
-        <text class="goods-name">眉县猕猴桃 约500g</text>
-        <text class="goods-nowPrice">￥16.8<text class="goods-oldPrice">￥20</text></text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <image src="../../image/demo/demo-goods5.png"></image>
-      <text class="kill-icon">秒杀</text>
-      <view class="name-price">
-        <text class="goods-name">黄柠檬 约200g</text>
-        <text class="goods-nowPrice">￥12.8<text class="goods-oldPrice">￥16.8</text></text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <image src="../../image/demo/demo-goods6.png"></image>
-      <text class="kill-icon">秒杀</text>
-      <view class="name-price">
-        <text class="goods-name">海南红心柚子 约1kg</text>
-        <text class="goods-nowPrice">￥24.6<text class="goods-oldPrice">￥31.5</text></text>
+        <text class="goods-name">{{item.name}}</text>
+        <text class="goods-nowPrice">￥{{item.nowPrice}}<text class="goods-oldPrice">￥{{item.oldPrice}}</text></text>
       </view>
     </view>
   </scroll-view>

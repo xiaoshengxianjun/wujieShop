@@ -1,0 +1,33 @@
+@import "./orderItem/orderItem.wxss";
+
+page {
+  background: #f1f3f6;
+}
+
+.top-tab {
+  overflow: hidden;
+  height: 80rpx;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+}
+
+.tab-item {
+  float: left;
+  width: 20%;
+  height: 76rpx;
+  border-bottom: 4rpx solid transparent;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+
+.tab-item.active {
+  color: #2ad47a;
+  border-bottom: 4rpx solid #2ad47a;
+}
+
+.swiper{
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}

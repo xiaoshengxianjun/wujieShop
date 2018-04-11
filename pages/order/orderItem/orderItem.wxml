@@ -1,0 +1,23 @@
+<template name="orderItem">
+  <view class="order-item">
+    <view class="item-top">
+      <text class="group-icon">{{item.type}}</text>
+      <text class="order-num">订单编号:{{item.orderNum}}</text>
+      <text class="order-status">{{item.status}}</text>
+    </view>
+    <scroll-view class="item-middle" scroll-x style="width: 100%">
+      <view class="goods-item-img" wx:for="{{item.details}}" wx:for-item="itm" wx:key="itm.id">
+        <image src="{{itm.img}}"></image>
+      </view>
+    </scroll-view>
+    <view class="item-total">
+      <text>共{{item.details.length}}个商品</text>
+       合计:<text class="total-price">￥9.80 </text> 
+      <text class="freight"> (含运费:￥0.00)</text>
+    </view>
+    <view class="btn-box">
+      <button type="default" size="mini" plain>取消订单</button>
+      <button type="default" size="mini" plain style="color:#ff4a1d;border-color:#ff4a1d;">立即支付</button>
+    </view>
+  </view>
+</template>

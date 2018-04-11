@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/order/order",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -21,7 +22,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/order/order",
         "iconPath": "image/tabbar_order.png",
         "selectedIconPath": "image/tabbar_order_active.png",
         "text": "我的订单"

@@ -110,12 +110,12 @@ page {
 
 .group-icon {
   color: #ffa200;
-  border: solid 1px #ffa200;
+  border: solid 2rpx #ffa200;
 }
 
 .kill-icon {
   color: #ff002e;
-  border: solid 1px #ff002e;
+  border: solid 2rpx #ff002e;
 }
 
 .name-price {

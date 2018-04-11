@@ -1,0 +1,24 @@
+<import src="./orderItem/orderItem.wxml" />
+
+<view class="top-tab">
+  <view class="tab-item {{tabSelected==idx ? 'active' : ''}}" wx:for="{{tabType}}" wx:for-index="idx" data-idx="{{idx}}" wx:key="index" bindtap="switchTab">{{item}}</view>
+</view>
+<!-- 可滑动浏览订单 -->
+<swiper class="swiper" style="height:{{swiperHeight}}px">
+  <!-- 全部 -->
+  <swiper-item>
+    <scroll-view>
+      <block class="order-item-box" wx:for="{{allOrders}}" wx:key="{{item.id}}">
+        <template is="orderItem" data="{{item}}"></template>
+      </block>
+    </scroll-view>
+  </swiper-item>
+  <!-- 待付款 -->
+  <swiper-item></swiper-item>
+  <!-- 待拼团 -->
+  <swiper-item></swiper-item>
+  <!-- 待自提 -->
+  <swiper-item></swiper-item>
+  <!-- 待收货 -->
+  <swiper-item></swiper-item>
+</swiper>
