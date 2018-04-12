@@ -1,9 +1,11 @@
 <template name="orderItem">
   <view class="order-item">
     <view class="item-top">
-      <text class="group-icon">{{item.type}}</text>
+      <text wx:if="{{item.type == '拼团'}}" class="group-icon">{{item.type}}</text>
+      <text wx:if="{{item.type == '秒杀'}}" class="kill-icon">{{item.type}}</text>
       <text class="order-num">订单编号:{{item.orderNum}}</text>
-      <text class="order-status">{{item.status}}</text>
+      <text wx:if="{{item.status == '待付款'}}" class="order-status" style="color:#ff1818">{{item.status}}</text>
+      <text wx:if="{{item.status != '待付款'}}" class="order-status" style="color:#f3b610">{{item.status}}</text>
     </view>
     <scroll-view class="item-middle" scroll-x style="width: 100%">
       <view class="goods-item-img" wx:for="{{item.details}}" wx:for-item="itm" wx:key="itm.id">
@@ -11,8 +13,8 @@
       </view>
     </scroll-view>
     <view class="item-total">
-      <text>共{{item.details.length}}个商品</text>
-       合计:<text class="total-price">￥9.80 </text> 
+      <text>共{{item.details.length}}个商品</text> 合计:
+      <text class="total-price">￥9.80 </text>
       <text class="freight"> (含运费:￥0.00)</text>
     </view>
     <view class="btn-box">

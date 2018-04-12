@@ -1,0 +1,3 @@
+<template name="groupKillIcon">
+  <text class="{{type=='拼团' ? 'group-icon' : 'kill-icon'}}">{{type}}</text>
+</template>

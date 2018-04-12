@@ -1,0 +1,108 @@
+page {
+  background-color: #e6f7ff;
+}
+
+/*顶部信息  */
+
+.head-info image {
+  width: 100%;
+  margin-bottom: 34rpx;
+}
+
+.list-item {
+  width: 668rpx;
+  margin: 0 auto;
+  margin-bottom: 38rpx;
+  background-color: #fff;
+  box-shadow: 4rpx 6rpx 20rpx 0rpx rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.list-item .item-img {
+  width: 100%;
+  height: 468rpx;
+}
+
+.item-info {
+  padding: 20rpx 30rpx 30rpx;
+  position: relative;
+}
+
+.item-info >text {
+  display: block;
+}
+
+.item-info .item-name {
+  font-size: 34rpx;
+  color: #030405;
+  font-weight: bold;
+}
+
+.item-info .item-desc {
+  font-size: 26rpx;
+}
+
+.item-info .item-price-box {
+  color: #f33;
+  font-size: 30rpx;
+}
+
+.item-price-box .item-nowPrice {
+  font-size: 50rpx;
+}
+
+.item-price-box .item-oldPrice {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.item-info button {
+  width: 192rpx;
+  height: 54rpx;
+  background-color: #f33;
+  box-shadow: 0rpx 4rpx 13rpx 0rpx rgba(255, 51, 51, 0.5);
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 54rpx;
+  border-radius: 0rpx;
+  position: absolute;
+  bottom: 30rpx;
+  right: 30rpx;
+}
+
+.remain {
+  position: absolute;
+  top: -8rpx;
+  left: 20rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.remain image {
+  width: 140rpx;
+  height: 132rpx;
+}
+
+.remain >view {
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height: 110rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.remain text {
+  text-indent: -8rpx;
+}
+
+.line {
+  width: 88rpx;
+  height: 2rpx;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: -8rpx;
+}

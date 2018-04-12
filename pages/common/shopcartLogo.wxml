@@ -1,0 +1,5 @@
+<template name="shopcartLogo">
+  <view class="shopcart-logo">
+    <image src="../../image/icon-shopcart.png"></image>
+  </view>
+</template>

@@ -1,0 +1,22 @@
+<view class="head-info">
+  <image src="../../image/demo/fightGroup.png" mode="widthFix"></image>
+</view>
+<!-- 列表 -->
+<view class="list-item" wx:for="{{list}}" wx:key="id">
+  <image class="item-img" src="{{item.img}}"></image>
+  <view class="remain">
+    <image src="../../image/fightGroup-icon.png"></image>
+    <view>
+      <text>立省</text>
+      <view class="line"></view>
+      <text>11.9元</text>
+    </view>
+  </view>
+  <view class="item-info">
+    <text class="item-name">{{item.name}}</text>
+    <text class="item-desc">{{item.desc}}</text>
+    <text class="item-price-box">￥<text class="item-nowPrice">{{item.nowPrice}}</text>
+    <text class="item-oldPrice">￥{{item.oldPrice}}</text></text>
+    <button>立即开团</button>
+  </view>
+</view>

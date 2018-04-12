@@ -1,0 +1,18 @@
+.group-icon, .kill-icon {
+  display: inline-block;
+  text-align: center;
+  width: 50rpx;
+  height: 26rpx;
+  border-radius: 4rpx;
+  font-size: 20rpx;
+}
+
+.group-icon {
+  color: #ffa200;
+  border: solid 2rpx #ffa200;
+}
+
+.kill-icon {
+  color: #ff002e;
+  border: solid 2rpx #ff002e;
+}

@@ -17,32 +17,32 @@ Page({
     }, {
       id: 2,
       name: "砀山黄桃 约500g",
-      img: "../../image/demo/demo-goods2.png",
+      img: "../../image/demo/demo-goods1.png",
       nowPrice: 22.3,
       oldPrice: 25.5
     }, {
       id: 3,
       name: "海南贵妃芒果 约500g",
-      img: "../../image/demo/demo-goods3.png",
+      img: "../../image/demo/demo-goods1.png",
       nowPrice: 16.8,
       oldPrice: 20
     }],
     seckillGoods: [{
       id: 4,
       name: "眉县猕猴桃 约500g",
-      img: "../../image/demo/demo-goods4.png",
+      img: "../../image/demo/demo-goods1.png",
       nowPrice: 16.8,
       oldPrice: 20
     }, {
       id: 5,
       name: "黄柠檬 约200g",
-      img: "../../image/demo/demo-goods5.png",
+      img: "../../image/demo/demo-goods1.png",
       nowPrice: 26.8,
       oldPrice: 36.8
     }, {
       id: 6,
       name: "海南红心柚子 约1kg",
-      img: "../../image/demo/demo-goods6.png",
+      img: "../../image/demo/demo-goods1.png",
       nowPrice: 22.3,
       oldPrice: 25.5
     }]
@@ -99,6 +99,18 @@ Page({
   handleBlur: function (e) {
     this.setData({
       searchLabelShow: false
+    })
+  },
+  // 跳转到拼团页面
+  toFightGroup: function () {
+    wx.navigateTo({
+      url: '../fightGroup/fightGroup'
+    })
+  },
+  // 跳转到商品详情页面
+  toGoodsDetail: function () {
+    wx.navigateTo({
+      url: '../goodsDetail/goodsDetail'
     })
   }
 })

@@ -11,25 +11,77 @@ Page({
         img: "../../image/demo/demo-goods1.png",
       }, {
         id: 2,
-        img: "../../image/demo/demo-goods2.png",
+        img: "../../image/demo/demo-goods1.png",
       }, {
         id: 3,
-        img: "../../image/demo/demo-goods3.png",
+        img: "../../image/demo/demo-goods1.png",
+      }],
+      totalPrice: '53.23'
+    }, {
+      type: "拼团",
+      orderNum: "201801234123554123",
+      status: "待拼团",
+      details: [{
+        id: 1,
+        img: "../../image/demo/demo-goods1.png",
+      }],
+      totalPrice: '53.23'
+    }, {
+      type: "秒杀",
+      orderNum: "201801234123554123",
+      status: "待自提",
+      details: [{
+        id: 1,
+        img: "../../image/demo/demo-goods1.png",
       }, {
         id: 2,
-        img: "../../image/demo/demo-goods2.png",
-      }, {
-        id: 3,
-        img: "../../image/demo/demo-goods3.png",
-      }, {
-        id: 2,
-        img: "../../image/demo/demo-goods2.png",
-      }, {
-        id: 3,
-        img: "../../image/demo/demo-goods3.png",
+        img: "../../image/demo/demo-goods1.png",
+      }],
+      totalPrice: '53.23'
+    }, {
+      type: "秒杀",
+      orderNum: "201801234123554123",
+      status: "待收货",
+      details: [{
+        id: 1,
+        img: "../../image/demo/demo-goods1.png",
       }],
       totalPrice: '53.23'
     }],
+    unpayedOrders: [{
+      type: "拼团",
+      orderNum: "201801234123554123",
+      status: "待付款",
+      details: [{
+        id: 1,
+        img: "../../image/demo/demo-goods1.png",
+      }],
+      totalPrice: '53.23'
+    }],
+    ungroupOrders: [{
+      type: "拼团",
+      orderNum: "201801234123554123",
+      status: "待拼团",
+      details: [{
+        id: 1,
+        img: "../../image/demo/demo-goods1.png",
+      }],
+      totalPrice: '53.23'
+    }],
+    untakeOrders: [{
+      type: "秒杀",
+      orderNum: "201801234123554123",
+      status: "待自提",
+      details: [{
+        id: 1,
+        img: "../../image/demo/demo-goods1.png",
+      }, {
+        id: 2,
+        img: "../../image/demo/demo-goods1.png",
+      }],
+      totalPrice: '53.23'
+    }],
+    ungetOrders:[],
     swiperHeight: 0
   },
   //生命周期函数-监听页面初次渲染完毕
@@ -39,7 +91,7 @@ Page({
       success: function (res) {
         console.log(res)
         that.setData({
-          swiperHeight: (res.windowHeight - 45)
+          swiperHeight: res.windowHeight + 10
         });
       }
     })
@@ -52,5 +104,14 @@ Page({
     });
     //如果需要加载数据
 
-  }
+  },
+  //swiperChange
+  bindChange: function (e) {
+    var that = this;
+    this.setData({
+      tabSelected: e.detail.current
+    });
+    //如果需要加载数据
+    
+  },
 })

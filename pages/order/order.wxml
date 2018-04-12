@@ -4,21 +4,45 @@
   <view class="tab-item {{tabSelected==idx ? 'active' : ''}}" wx:for="{{tabType}}" wx:for-index="idx" data-idx="{{idx}}" wx:key="index" bindtap="switchTab">{{item}}</view>
 </view>
 <!-- 可滑动浏览订单 -->
-<swiper class="swiper" style="height:{{swiperHeight}}px">
+<swiper class="swiper" current="{{tabSelected}}" bindchange="bindChange" duration="300"  style="height:{{swiperHeight}}px">
   <!-- 全部 -->
   <swiper-item>
-    <scroll-view>
+    <scroll-view scroll-y style="height:100%;">
       <block class="order-item-box" wx:for="{{allOrders}}" wx:key="{{item.id}}">
         <template is="orderItem" data="{{item}}"></template>
       </block>
     </scroll-view>
   </swiper-item>
   <!-- 待付款 -->
-  <swiper-item></swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="height:100%;">
+      <block class="order-item-box" wx:for="{{unpayedOrders}}" wx:key="{{item.id}}">
+        <template is="orderItem" data="{{item}}"></template>
+      </block>
+    </scroll-view>
+  </swiper-item>
   <!-- 待拼团 -->
-  <swiper-item></swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="height:100%;">
+      <block class="order-item-box" wx:for="{{ungroupOrders}}" wx:key="{{item.id}}">
+        <template is="orderItem" data="{{item}}"></template>
+      </block>
+    </scroll-view>
+  </swiper-item>
   <!-- 待自提 -->
-  <swiper-item></swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="height:100%;">
+      <block class="order-item-box" wx:for="{{untakeOrders}}" wx:key="{{item.id}}">
+        <template is="orderItem" data="{{item}}"></template>
+      </block>
+    </scroll-view>
+  </swiper-item>
   <!-- 待收货 -->
-  <swiper-item></swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="height:100%;">
+      <block class="order-item-box" wx:for="{{ungetOrders}}" wx:key="{{item.id}}">
+        <template is="orderItem" data="{{item}}"></template>
+      </block>
+    </scroll-view>
+  </swiper-item>
 </swiper>

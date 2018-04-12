@@ -1,0 +1,15 @@
+/* shopcartLogo.wxss */
+.shopcart-logo{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.4;
+  position: fixed;
+  right: 30rpx;
+  bottom: 160rpx;
+}
+.shopcart-logo image{
+  width: 100%;
+  height: 100%;
+}

@@ -4,6 +4,9 @@
   height: 344rpx;
   margin-bottom: 10rpx;
 }
+.order-item:first-of-type{
+  margin-top: 10rpx;
+}
 
 /*头部订单状态  */
 
@@ -14,14 +17,27 @@
   border-bottom: 2rpx solid #f1f1f1;
 }
 
-.group-icon {
+.group-icon, .kill-icon {
+  display: inline-block;
   width: 50rpx;
   height: 26rpx;
-  border-radius: 4px;
+  line-height: 26rpx;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 4rpx;
   font-size: 20rpx;
+  margin-right: 10rpx;
+  margin-top: -4rpx;
+}
+
+.group-icon {
   color: #ffa200;
   border: solid 2rpx #ffa200;
-  margin-right: 10rpx;
+}
+
+.kill-icon {
+  color: #ff002e;
+  border: solid 2rpx #ff002e;
 }
 
 .order-status {
@@ -31,9 +47,10 @@
 /*商品图片展示区  */
 
 .item-middle {
-  height: 122rpx;
+  height: 140rpx;
   padding: 9rpx 20rpx;
-  overflow: scroll;
+  white-space: nowrap;
+  box-sizing: border-box;
   border-bottom: 2rpx solid #f1f1f1;
 }
 

@@ -1,4 +1,6 @@
 <!--index.wxml-->
+<import src="../common/shopcartLogo.wxml" />
+
 <view class="top-info container">
   <view class="location">
     <image src="../../image/icon_location.png"></image>
@@ -13,10 +15,10 @@
     </label>
   </view>
 </view>
-<view class="take-group">
-  <image src="../../image/demo/demo-img1.png" mode="widthFix"></image>
+<view class="fight-group">
+  <image src="../../image/demo/demo-img1.png" mode="widthFix" bindtap="toFightGroup"></image>
   <scroll-view class="goods-list-box" scroll-x="true" style="width: 100%">
-    <view class="goods-item" wx:for="{{takeGroupGoods}}" wx:key="id">
+    <view class="goods-item" wx:for="{{takeGroupGoods}}" wx:key="id" bindtap="toGoodsDetail">
       <image src="{{item.img}}"></image>
       <text class="group-icon">拼团</text>
       <view class="name-price">
@@ -39,9 +41,7 @@
     </view>
   </scroll-view>
 </view>
-<view class="shopcart-box">
-  <image src="../../image/icon-shopcart.png"></image>
-</view>
+<template is="shopcartLogo"></template>
 <!-- <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>

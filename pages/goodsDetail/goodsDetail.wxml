@@ -1,0 +1,54 @@
+<import src="../common/shopcartLogo.wxml" />
+<import src="../common/groupKillIcon.wxml" />
+<!-- 商品图片轮播 -->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item class="swiper-item">
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 商品名称价格等 -->
+<view class="goods-info-box">
+  <view class="goods-name">
+    <template is="groupKillIcon" data="{{type:'拼团'}}"></template>
+    <text>【会员专享】沙漠蜜瓜（一个装1.1KG以上）香甜如密  脆嫩水润</text>
+  </view>
+  <text class="goods-desc">酸甜适度  化渣汁多  精品水果</text>
+  <view class="goods-tag">
+    <text>好吃推荐</text>
+    <text>热销爆款</text>
+  </view>
+  <view class="goods-price-box">
+    <text class="goods-nowPrice"><text>￥</text>58.00</text>
+    <text class="goods-oldPrice">￥100.00</text>
+    <text class="goods-soldNum">已售12341份</text>
+  </view>
+</view>
+<!-- 商品详情 -->
+<view class="goods-details">
+  <text>商品详情</text>
+  <view>
+    <text>产地</text>
+    <text>中国</text>
+  </view>
+  <view>
+    <text>储存条件</text>
+    <text>常温</text>
+  </view>
+  <view>
+    <text>品牌</text>
+    <text>KAM YUEN/甘源</text>
+  </view>
+</view>
+<!-- 图文详情 -->
+<view class="goods-imgtext">
+  <text>图文详情</text>
+  <image src="../../image/demo/fightGroup.png" mode="widthFix"></image>
+</view>
+<view class="handle-box">
+  <view bindtap="toHome"><image src="../../image/tabbar_home.png"></image></view>
+  <view>加入购物车</view>
+  <view>立即开团</view>
+</view>
+<template is="shopcartLogo"></template>
