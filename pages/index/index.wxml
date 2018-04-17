@@ -3,20 +3,20 @@
 
 <view class="top-info container">
   <view class="location">
-    <image src="../../image/icon_location.png"></image>
+    <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/icon_location.png"></image>
     <text>上海人民广场</text>
-    <image src="../../image/icon_down.png"></image>
+    <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/icon_down.png"></image>
   </view>
   <view class="search-box" bindtap="handleFocus">
     <input id="search" bindblur="handleBlur" />
     <label for="search" hidden="{{searchLabelShow}}">
-      <image src="../../image/icon_search.png"></image>
+      <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/icon_search.png"></image>
       <text>请输入搜索内容</text>
     </label>
   </view>
 </view>
 <view class="fight-group">
-  <image src="../../image/demo/demo-img1.png" mode="widthFix" bindtap="toFightGroup"></image>
+  <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/index-demo1.png" mode="widthFix" bindtap="toFightGroup"></image>
   <scroll-view class="goods-list-box" scroll-x="true" style="width: 100%">
     <view class="goods-item" wx:for="{{takeGroupGoods}}" wx:key="id" bindtap="toGoodsDetail">
       <image src="{{item.img}}"></image>
@@ -29,9 +29,9 @@
   </scroll-view>
 </view>
 <view class="seckill">
-  <image src="../../image/demo/demo-img2.png" mode="widthFix"></image>
+  <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/index-demo2.png" mode="widthFix" bindtap="toSeckill"></image>
   <scroll-view class="goods-list-box" scroll-x="true" style="width: 100%">
-    <view class="goods-item" wx:for="{{seckillGoods}}" wx:key="id">
+    <view class="goods-item" wx:for="{{seckillGoods}}" wx:key="id" bindtap="toGoodsDetail">
       <image src="{{item.img}}"></image>
       <text class="kill-icon">秒杀</text>
       <view class="name-price">

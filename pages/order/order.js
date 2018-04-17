@@ -8,13 +8,13 @@ Page({
       status: "待付款",
       details: [{
         id: 1,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods1.jpg",
       }, {
         id: 2,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods2.jpg",
       }, {
         id: 3,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods3.jpg",
       }],
       totalPrice: '53.23'
     }, {
@@ -23,7 +23,7 @@ Page({
       status: "待拼团",
       details: [{
         id: 1,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods1.jpg",
       }],
       totalPrice: '53.23'
     }, {
@@ -32,10 +32,10 @@ Page({
       status: "待自提",
       details: [{
         id: 1,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods4.jpg",
       }, {
         id: 2,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods6.jpg",
       }],
       totalPrice: '53.23'
     }, {
@@ -44,7 +44,7 @@ Page({
       status: "待收货",
       details: [{
         id: 1,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods5.jpg",
       }],
       totalPrice: '53.23'
     }],
@@ -54,7 +54,7 @@ Page({
       status: "待付款",
       details: [{
         id: 1,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods2.jpg",
       }],
       totalPrice: '53.23'
     }],
@@ -64,7 +64,7 @@ Page({
       status: "待拼团",
       details: [{
         id: 1,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods3.jpg",
       }],
       totalPrice: '53.23'
     }],
@@ -74,10 +74,10 @@ Page({
       status: "待自提",
       details: [{
         id: 1,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods4.jpg",
       }, {
         id: 2,
-        img: "../../image/demo/demo-goods1.png",
+        img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods6.jpg",
       }],
       totalPrice: '53.23'
     }],

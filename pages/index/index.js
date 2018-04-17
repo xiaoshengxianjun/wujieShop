@@ -11,38 +11,38 @@ Page({
     takeGroupGoods: [{
       id: 1,
       name: "奶油草莓 约500g",
-      img: "../../image/demo/demo-goods1.png",
+      img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods1.jpg",
       nowPrice: 26.8,
       oldPrice: 36.8
     }, {
       id: 2,
       name: "砀山黄桃 约500g",
-      img: "../../image/demo/demo-goods1.png",
+      img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods2.jpg",
       nowPrice: 22.3,
       oldPrice: 25.5
     }, {
       id: 3,
       name: "海南贵妃芒果 约500g",
-      img: "../../image/demo/demo-goods1.png",
+      img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods3.jpg",
       nowPrice: 16.8,
       oldPrice: 20
     }],
     seckillGoods: [{
       id: 4,
       name: "眉县猕猴桃 约500g",
-      img: "../../image/demo/demo-goods1.png",
+      img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods4.jpg",
       nowPrice: 16.8,
       oldPrice: 20
     }, {
       id: 5,
       name: "黄柠檬 约200g",
-      img: "../../image/demo/demo-goods1.png",
+      img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods5.jpg",
       nowPrice: 26.8,
       oldPrice: 36.8
     }, {
       id: 6,
       name: "海南红心柚子 约1kg",
-      img: "../../image/demo/demo-goods1.png",
+      img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods6.jpg",
       nowPrice: 22.3,
       oldPrice: 25.5
     }]
@@ -111,6 +111,12 @@ Page({
   toGoodsDetail: function () {
     wx.navigateTo({
       url: '../goodsDetail/goodsDetail'
+    })
+  },
+  // 跳转到限时秒杀页面
+  toSeckill: function () {
+    wx.navigateTo({
+      url: '../seckill/seckill'
     })
   }
 })

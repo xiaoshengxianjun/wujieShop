@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/seckill/seckill",
     "pages/index/index",
     "pages/order/order",
     "pages/fightGroup/fightGroup",
@@ -9,7 +10,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#37db84",
-    "navigationBarTitleText": "鲜丰水果",
+    "navigationBarTitleText": "无界门店",
     "navigationBarTextStyle":"white"
   },
   "tabBar": {

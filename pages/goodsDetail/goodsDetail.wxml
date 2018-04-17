@@ -44,7 +44,7 @@
 <!-- 图文详情 -->
 <view class="goods-imgtext">
   <text>图文详情</text>
-  <image src="../../image/demo/fightGroup.png" mode="widthFix"></image>
+  <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/detail-img.jpg" mode="widthFix"></image>
 </view>
 <view class="handle-box">
   <view bindtap="toHome"><image src="../../image/tabbar_home.png"></image></view>

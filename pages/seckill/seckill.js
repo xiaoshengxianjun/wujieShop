@@ -1,24 +1,30 @@
-// pages/fightGroup/fightGroup.js
+// pages/seckill/seckill.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [{
-      id: 1,
-      name: "大自然的馈赠 午后“莓”好时光",
-      desc: "Driscolls云南红树莓",
-      nowPrice: 59.90,
-      oldPrice: 90.00,
-      img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/fightGroup-demo1.jpg"
+    timeList: [{
+      time: "10:00",
+      status: "已开抢",
+      active: false
     }, {
-      id: 2,
-      name: "大自然的馈赠 午后“莓”好时光",
-      desc: "Driscolls云南红树莓",
-      nowPrice: 59.90,
-      oldPrice: 90.00,
-      img: "https://gomoretech2.oss-cn-shanghai.aliyuncs.com/fightGroup-demo2.png"
+      time: "10:00",
+      status: "抢购中",
+      active: true      
+    }, {
+      time: "10:00",
+      status: "即将开始",
+      active: false      
+    }, {
+      time: "10:00",
+      status: "明天即将开始",
+      active: false 
+    }, {
+      time: "10:00",
+      status: "明天即将开始",
+      active: false 
     }]
   },
 

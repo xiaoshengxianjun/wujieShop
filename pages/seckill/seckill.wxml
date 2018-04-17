@@ -1,0 +1,10 @@
+<scroll-view class="time-list" scroll-x style="width: 100%">
+  <view wx:for="{{timeList}}" wx:key="index" class="time-item {{item.active == true ? 'active' : ''}}">
+    <view class="center">
+      <text>{{item.time}}</text>
+      <text>{{item.status}}</text>
+    </view>
+    <view hidden="{{!item.active}}" class="triangle"></view>
+  </view>
+  <!-- <view class="line"></view> -->
+</scroll-view>

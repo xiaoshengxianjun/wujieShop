@@ -1,11 +1,11 @@
 <view class="head-info">
-  <image src="../../image/demo/fightGroup.png" mode="widthFix"></image>
+  <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/fightGroup.jpg" mode="widthFix"></image>
 </view>
 <!-- 列表 -->
 <view class="list-item" wx:for="{{list}}" wx:key="id">
   <image class="item-img" src="{{item.img}}"></image>
   <view class="remain">
-    <image src="../../image/fightGroup-icon.png"></image>
+    <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/fightGroup-icon.png"></image>
     <view>
       <text>立省</text>
       <view class="line"></view>
