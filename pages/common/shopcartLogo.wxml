@@ -1,5 +1,7 @@
 <template name="shopcartLogo">
-  <view class="shopcart-logo">
-    <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/icon-shopcart.png"></image>
-  </view>
+  <navigator url="/pages/shopcart/shopcart">
+    <view class="shopcart-logo">
+      <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/icon-shopcart.png"></image>
+    </view>
+  </navigator>
 </template>

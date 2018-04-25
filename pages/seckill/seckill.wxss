@@ -4,17 +4,9 @@
   height: 106rpx;
   white-space: nowrap;
   overflow: hidden;
-  border-bottom: 1rpx solid #f5f5f5;
+  border-bottom: 1rpx solid #f6f6f6;
   position: relative;
-}
-
-.time-list .line {
-  position: absolute;
-  bottom: 0rpx;
-  left: 0rpx;
-  height: 0rpx;
-  width: 100%;
-  border-bottom: 1rpx solid #f5f5f5;
+  display: flex;
 }
 
 .time-item {
@@ -62,6 +54,163 @@
 }
 
 .time-item.active {
-  background-color: #f33;
   color: #fff;
+  background: linear-gradient(-45deg, #f33 0%, #f66 100%), linear-gradient(#0198ff, #0198ff);
+}
+
+.time-down {
+  /* width: 100%; */
+  height: 90rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  font-size: 24rpx;
+  overflow: hidden;
+  line-height: 90rpx;
+  padding: 0rpx 20rpx;
+}
+
+.time-down view:first-of-type {
+  color: #f33;
+  float: left;
+}
+
+.time-down view:first-of-type image {
+  width: 24rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-top: -4rpx;
+}
+
+.time-down view:last-of-type {
+  color: #666;
+  float: right;
+}
+
+.time-down view:last-of-type .txt {
+  display: inline-block;
+  width: 42rpx;
+  height: 50rpx;
+  background-color: #333;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+  margin: 0rpx 10rpx;
+}
+
+.time-down view:last-of-type .colon {
+  color: #0198ff;
+}
+
+.goods-item {
+  /* width: 100%; */
+  height: 244rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  padding: 28rpx 20rpx;
+  overflow: hidden;
+}
+
+.goods-img-box {
+  width: 244rpx;
+  height: 244rpx;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+
+.goods-img-box image {
+  width: 100%;
+  height: 100%;
+}
+
+.goods-img-box .qiangguang {
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+.goods-info {
+  width: calc(100% - 244rpx);
+  height: 100%;
+  position: relative;
+  float: right;
+}
+
+.goods-info .goods-name {
+  color: #333;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.goods-info .goods-desc {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #999;
+  font-size: 28rpx;
+  margin: 10rpx 0rpx 20rpx;
+}
+
+.goods-price {
+  color: #f33;
+  font-size: 30rpx;
+}
+
+.goods-price .nowPrice {
+  font-size: 50rpx;
+}
+
+.goods-price .oldPrice {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.goods-info button {
+  width: 192rpx;
+  height: 58rpx;
+  line-height: 58rpx;
+  color: #fff;
+  border: none;
+   border-radius: 0rpx; 
+  font-size: 30rpx;
+  position: absolute;
+  right: 0rpx;
+  bottom: 0rpx;
+}
+
+.goods-info button.unable {
+  background-color: #d9d9d9;
+  box-shadow: 0px 4px 13px 0px rgba(153, 153, 153, 0.5);
+}
+
+.goods-info button.enable {
+  background-color: #f33;
+  box-shadow: 0px 4px 13px 0px rgba(255, 51, 51, 0.5);
+}
+
+.progress-box {
+  width: 300rpx;
+  font-size: 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  position: absolute;
+  left: 0rpx;
+  bottom: 0rpx;
+}
+
+.progress-box text {
+  display: inline-block;
+  /* width: 100rpx; */
+  color: #999;
+}
+
+.progress-box progress {
+  display: inline-block;
+  width: 150rpx;
 }

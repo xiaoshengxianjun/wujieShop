@@ -1,0 +1,221 @@
+/* pages/shopcart/shopcart.wxss */
+
+page {
+  background-color: #f3f4f6;
+}
+
+.shopcart-main {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.shopcart-main >view {
+  padding: 0rpx 30rpx;
+}
+
+.shopcart-title {
+  overflow: hidden;
+  height: 84rpx;
+  line-height: 84rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.shopcart-title .checkbox {
+  float: left;
+  font-size: 36rpx;
+}
+
+.shopcart-title .checkbox checkbox {
+  margin-top: -4rpx;
+  line-height: 84rpx;
+}
+
+.shopcart-title .edit {
+  float: right;
+  font-size: 28rpx;
+  color: #287eff;
+}
+
+.shopcart-title .edit image {
+  width: 26rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  margin-top: -5rpx;
+}
+
+/* 购物车商品内容 */
+
+.shopcart-item {
+  height: 220rpx;
+  overflow: hidden;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.shopcart-item:last-of-type {
+  border: none;
+}
+
+.shopcart-item checkbox, .shopcart-item image {
+  float: left;
+  margin-top: 37rpx;
+}
+
+.shopcart-item checkbox {
+  margin-top: -4rpx;
+  line-height: 220rpx;
+}
+
+.shopcart-item image {
+  width: 146rpx;
+  height: 146rpx;
+}
+
+.shopcart-item .goods-info {
+  float: left;
+  width: calc(100% - 210rpx);
+  font-size: 28rpx;
+}
+
+.goods-info {
+  margin-top: 37rpx;
+  height: 146rpx;
+  position: relative;
+}
+
+.goods-info >text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goods-desc {
+  font-size: 22rpx;
+}
+
+.price-number {
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 44rpx;
+  color: #f33;
+}
+
+.price-number .old-price {
+  font-size: 20rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.price-number button {
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.price-number >view {
+  float: right;
+  width: 160rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+}
+
+.price-number >view view {
+  border: 1rpx solid #ddd;
+  border-radius: 50%;
+  width: 42rpx;
+  height: 42rpx;
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 42rpx;
+}
+
+/* 底部消息 */
+
+.bottom-info {
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 110rpx;
+  line-height: 110rpx;
+  box-sizing: border-box;
+  border-top: 1px solid #f5f5f5;
+  background-color: #fff;
+}
+
+.bottom-info .checkbox {
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+
+.bottom-info checkbox {
+  line-height: 110rpx;
+  margin-top: -5rpx;
+}
+
+.bottom-info .tocalc {
+  display: block;
+  width: 240rpx;
+  background-color: #2ad47a;
+  float: right;
+  text-align: center;
+  color: #fff;
+}
+
+.bottom-info >view {
+  float: right;
+  margin-right: 16rpx;
+  margin-top: 20rpx;
+  line-height: 40rpx;
+  text-align: right;
+}
+
+.bottom-info >view >text {
+  display: block;
+  font-size: 30rpx;
+}
+
+.bottom-info >view >text:last-of-type {
+  font-size: 20rpx;
+  color: #999;
+}
+
+.bottom-info >view .total-price {
+  color: #f33;
+}
+
+.guess-like {
+  padding: 0rpx 30rpx;
+  text-align: center;
+}
+
+.guess-like >image {
+  width: 258rpx;
+  height: 33rpx;
+  margin: 30rpx 0rpx;
+}
+
+.guess-main {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 110rpx;
+}
+
+.guess-item {
+  width: 330rpx;
+  height: 330rpx;
+  float: left;
+  border-radius: 16rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+
+.guess-item image {
+  width: 100%;
+  height: 330rpx;
+}

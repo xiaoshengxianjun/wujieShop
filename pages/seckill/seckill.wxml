@@ -1,3 +1,4 @@
+<!-- 时间列表 -->
 <scroll-view class="time-list" scroll-x style="width: 100%">
   <view wx:for="{{timeList}}" wx:key="index" class="time-item {{item.active == true ? 'active' : ''}}">
     <view class="center">
@@ -6,5 +7,42 @@
     </view>
     <view hidden="{{!item.active}}" class="triangle"></view>
   </view>
-  <!-- <view class="line"></view> -->
 </scroll-view>
+<!-- 倒计时 -->
+<view class="time-down">
+  <view>
+    <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/icon-redBulb.png"></image>
+    活动火热进行中！
+  </view>
+  <view>
+    距结束
+    <text class="last-hour txt">06</text>
+    <text class="colon">:</text>
+    <text class="last-minute txt">12</text>
+    <text class="colon">:</text>
+    <text class="last-second txt">23</text>
+  </view>
+</view>
+<!-- 商品列表 -->
+<view class="goods-item" wx:for="{{goodsList}}" wx:key="id">
+  <view class="goods-img-box">
+     <image src="{{item.img}}"></image> 
+     <image class="qiangguang" hidden="{{item.remain > 0 ? true : false}}" src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/img-qiangguang.png"></image> 
+  </view>
+  <view class="goods-info">
+    <text class="goods-name">{{item.name}}</text>
+    <text class="goods-desc">{{item.desc}}</text>
+    <view class="goods-price">
+      ￥
+      <text class="nowPrice">{{item.nowPrice}}</text>
+      <text class="oldPrice">￥{{item.oldPrice}}</text>
+    </view>
+    <view class="progress-box">
+      <text>仅剩{{item.remain}}件</text>
+      <progress percent="{{item.remain * 10}}" active stroke-width="4" activeColor="#ff6666" />
+    </view>
+    <view>
+      <button class="{{item.remain == 0 ? 'unable' : 'enable'}}">立即抢购</button>
+    </view>
+  </view>
+</view>

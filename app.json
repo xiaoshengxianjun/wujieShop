@@ -1,10 +1,11 @@
 {
   "pages":[
-    "pages/seckill/seckill",
     "pages/index/index",
     "pages/order/order",
     "pages/fightGroup/fightGroup",
     "pages/goodsDetail/goodsDetail",
+    "pages/seckill/seckill",
+    "pages/shopcart/shopcart",
     "pages/logs/logs"
   ],
   "window":{

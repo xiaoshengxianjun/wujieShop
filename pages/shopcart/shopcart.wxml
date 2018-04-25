@@ -1,0 +1,89 @@
+<!--pages/shopcart/shopcart.wxml-->
+<view class="shopcart-main">
+  <view class="shopcart-title">
+    <label class="checkbox" for="checkAll">
+      <checkbox id="checkAll" value="鲜丰水果" />鲜丰水果
+    </label>
+    <view class="edit">
+      <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/icon-edit.png"></image>
+      编辑
+    </view>
+  </view>
+  <!-- 商品区 -->
+  <view class="shopcart-item-box">
+    <view class="shopcart-item">
+      <checkbox />
+      <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods1.jpg"></image>
+      <view class="goods-info">
+        <text class="goods-name">智利车厘子</text>
+        <text class="goods-desc">优选品质,赠礼佳品</text>
+        <view class="price-number">
+          <text class="price-box">￥55.50<text class="old-price">￥75.35</text></text>
+          <view>
+            <view>-</view>
+            <text>1</text>
+            <view>+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="shopcart-item">
+      <checkbox />
+      <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods1.jpg"></image>
+      <view class="goods-info">
+        <text class="goods-name">智利车厘子</text>
+        <text class="goods-desc">优选品质,赠礼佳品</text>
+        <view class="price-number">
+          <text class="price-box">￥55.50<text class="old-price">￥75.35</text></text>
+          <view>
+            <view>-</view>
+            <text>1</text>
+            <view>+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="shopcart-item">
+      <checkbox />
+      <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods1.jpg"></image>
+      <view class="goods-info">
+        <text class="goods-name">智利车厘子</text>
+        <text class="goods-desc">优选品质,赠礼佳品</text>
+        <view class="price-number">
+          <text class="price-box">￥55.50<text class="old-price">￥75.35</text></text>
+          <view>
+            <view>-</view>
+            <text>1</text>
+            <view>+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 猜你喜欢 -->
+<view class="guess-like">
+  <image src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/img-guessLike.png"></image>
+  <view class="guess-main">
+  <view class="guess-item">
+    <image widthFix src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods5.jpg"></image>
+  </view>
+  <view class="guess-item">
+    <image widthFix src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods5.jpg"></image>
+  </view>
+  <view class="guess-item">
+    <image widthFix src="https://gomoretech2.oss-cn-shanghai.aliyuncs.com/demo-goods5.jpg"></image>
+  </view>
+  </view>
+</view>
+<!-- 底部操作栏 -->
+<view class="bottom-info">
+  <label class="checkbox" for="checkAll">
+    <checkbox id="checkAll" value="" />全选
+  </label>
+  <text class="tocalc">去结算</text>
+  <view>
+    <text>商品合计:<text class="total-price">￥110.00</text></text>
+    <text>(不含配送费)</text>
+  </view>
+</view>
