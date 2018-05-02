@@ -17,6 +17,6 @@
     <text class="item-desc">{{item.desc}}</text>
     <text class="item-price-box">￥<text class="item-nowPrice">{{item.nowPrice}}</text>
     <text class="item-oldPrice">￥{{item.oldPrice}}</text></text>
-    <button>立即开团</button>
+    <button bindtap="toGoodsDetail">立即开团</button>
   </view>
 </view>

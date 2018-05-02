@@ -42,7 +42,7 @@
       <progress percent="{{item.remain * 10}}" active stroke-width="4" activeColor="#ff6666" />
     </view>
     <view>
-      <button class="{{item.remain == 0 ? 'unable' : 'enable'}}">立即抢购</button>
+      <button class="{{item.remain == 0 ? 'unable' : 'enable'}}" bindtap="toGoodsDetail">立即抢购</button>
     </view>
   </view>
 </view>

@@ -22,6 +22,13 @@ Page({
     }]
   },
 
+  // 跳转到商品详情页面
+  toGoodsDetail: function () {
+    wx.navigateTo({
+      url: '../goodsDetail/goodsDetail'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
